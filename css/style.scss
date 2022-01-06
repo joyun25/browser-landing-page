@@ -1,0 +1,188 @@
+// Css Reset
+@import 'reset';
+
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Variables
+$blackGreen: #072227;
+$darkGreen: #24696E;
+$blueGreen: #35858B;
+$lightGreen: #AEFEFF;
+$firaSans: 'Fira Sans', sans-serif;
+
+// Mixin
+@mixin mobile {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
+
+// Layout
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: $firaSans;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.btn {
+    outline: 0;
+    border: 0;
+    padding: 5px 8px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-darkGreen {
+    background: $darkGreen;
+    color: #fff;
+    &:hover {
+        background: lighten($darkGreen, 10%);
+    }
+}
+
+.btn-transparent {
+    background: transparent;
+    color: #fff;
+    &:hover {
+        background: rgba(0, 0, 0, .2);
+    }
+}
+
+.bg-blackGreen {
+    background: $blackGreen;
+    color: #fff;
+}
+
+// My Css
+.header__search {
+    margin: 4px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: $blueGreen;
+    input {
+        background: $blueGreen;
+        color: $blackGreen;
+        outline: 0;
+        border: 0;
+        box-shadow: none;
+        padding-left: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    button {
+        padding: 5px 8px;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+.favorite ul {
+    li {
+        padding: 0;
+        padding-left: 10px;
+        a {
+            color: $lightGreen;
+        }
+    }
+    button {
+        padding: 5px;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+main {
+    background-image: url('../images/background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 72px);
+    @include mobile {
+        min-height: calc(100vh - 36px);
+    }
+}
+
+.main__search {
+    padding: 4px;
+    padding-bottom: 100px;
+    @include mobile {
+        padding-bottom: 0px;
+    }
+    input {
+        width: clamp(220px, 33%, 500px);
+        background: $blueGreen;
+        color: $blackGreen;
+        outline: 0;
+        border: 0;
+        box-shadow: none;
+        padding: 5px 0 5px 10px;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-radius: 5px;
+    }
+    button {
+        padding: 5px 8px;
+        margin: 0;
+        font-size: 24px;
+    }
+}
+
+.logo {
+    width: clamp(220px, 33%, 500px);
+}
+
+.nav-pc {
+    @include mobile {
+        display: none;
+    }
+}
+
+.nav-mb {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}

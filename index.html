@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="64x64" href="images/icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Wind Browser</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="nav-pc bg-blackGreen">
+            <nav class="d-flex">
+                <ul class="d-flex">
+                    <li class="btn btn-darkGreen">
+                        <i class="fas fa-arrow-left"></i> <!-- prev page -->
+                    </li>
+                    <li class="btn btn-darkGreen">
+                        <i class="fas fa-arrow-right"></i> <!-- next page -->
+                    </li>
+                    <li class="btn btn-darkGreen">
+                        <i class="fas fa-redo-alt"></i> <!-- refresh page -->
+                    </li>
+                </ul>
+                <form class="header__search d-flex w-100">
+                    <input class="w-100" type="text">
+                    <button class="btn btn-transparent" type="submit">
+                        <i class="fas fa-search"></i> <!-- search -->
+                    </button>
+                </form>
+                <button class="btn btn-darkGreen">
+                    <i class="fas fa-bars"></i> <!-- menu -->
+                </button>
+            </nav>
+            <nav class="favorite d-flex justify-between">
+                <ul class="d-flex justify-start align-center">
+                    <li class="btn btn-darkGreen">
+                        <a href="https://stackoverflow.com/">Stack Overflow</a>
+                        <button class="btn btn-transparent">
+                            <i class="fas fa-times"></i> <!-- delete item -->
+                        </button>
+                    </li>
+                    <li class="btn btn-darkGreen">
+                        <a href="https://github.com/joyun25/">Github</a>
+                        <button class="btn btn-transparent">
+                            <i class="fas fa-times"></i> <!-- delete item -->
+                        </button>
+                    </li>
+                    <li class="btn btn-darkGreen">
+                        <a href="https://codepen.io/">Codepen</a>
+                        <button class="btn btn-transparent">
+                            <i class="fas fa-times"></i> <!-- delete item -->
+                        </button>
+                    </li>
+                    <li class="btn btn-darkGreen">
+                        <a href="https://developer.mozilla.org/en-US/">MDN</a>
+                        <button class="btn btn-transparent">
+                            <i class="fas fa-times"></i> <!-- delete item -->
+                        </button>
+                    </li>
+                </ul>
+                <button class="btn btn-darkGreen">
+                    <i class="fas fa-plus"></i> <!-- plus favorite -->
+                </button>
+            </nav>
+        </header>
+        <main class="d-flex flex-column justify-center align-center">
+            <img class="logo" src="images/logo.svg" alt="Wind logo">
+            <form class="main__search d-flex justify-center w-100">
+                <input type="text">
+                <button class="btn btn-transparent" type="submit">
+                    <i class="fas fa-search"></i> <!-- search -->
+                </button>
+            </form>
+        </main>
+        <nav class="nav-mb bg-blackGreen">
+            <ul class="d-flex justify-between">
+                <li class="btn btn-darkGreen">
+                    <i class="fas fa-redo-alt"></i> <!-- refresh page -->
+                </li>
+                <li class="btn btn-darkGreen">
+                    <i class="fas fa-plus"></i> <!-- plus favorite -->
+                </li>
+                <li class="btn btn-darkGreen">
+                    <i class="fas fa-bars"></i> <!-- menu -->
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
