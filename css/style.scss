@@ -133,6 +133,7 @@ a {
     background: $blackGreen;
     border-radius: 5px;
     width: 200px;
+    z-index: 3;
     @include mobile {
         right: 0;
     }
@@ -166,6 +167,7 @@ a {
         position: absolute;
         right: 0;
         bottom: 0;
+        z-index: 2;
         box-shadow: 0 0 10px $blackGreen;
     }
 }
