@@ -71,7 +71,7 @@ favoriteMenus.forEach((favoriteMenu, i) => {
 addFavorites.forEach(addFavorite => {
     addFavorite.addEventListener('click', () => {
         let favoriteName = prompt('What is the NAME of the website?');
-        if (favoriteName.trim() == '') {
+        if (favoriteName.trim() == '' || favoriteName == null) {
             alert('Please fill in a valid name.');
             return
         }else if(favoriteName.trim().length > 20) {
