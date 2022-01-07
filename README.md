@@ -7,11 +7,17 @@
 ![](https://i.imgur.com/ywALM0M.png)
 
 #### Function:
-- Simple one-page webpage
+- search
+- add favorite list
+- favorite list menu toggle
+- delete favorite list item
+- reload
 
 #### Technology：
 - Scss
 - RWD
+- js
+- local storage
 
 #### Sources：
 - Web Icon：[iconfinder](https://www.iconfinder.com/)
