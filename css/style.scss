@@ -32,12 +32,16 @@ body {
 }
 
 a {
-    display: inline-block;
+    display: block;
     text-decoration: none;
 }
 
 .w-100 {
     width: 100%;
+}
+
+.d-none {
+    display: none;
 }
 
 .d-flex {
@@ -95,7 +99,7 @@ a {
 }
 
 // My Css
-.header__search {
+.headerSearch {
     margin: 4px;
     border-radius: 5px;
     overflow: hidden;
@@ -118,18 +122,51 @@ a {
     }
 }
 
-.favorite ul {
-    li {
+.favoriteMenu {
+    position: relative;
+}
+
+.favoriteList {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    background: $blackGreen;
+    border-radius: 5px;
+    width: 200px;
+    @include mobile {
+        right: 0;
+    }
+    a {
         padding: 0;
         padding-left: 10px;
-        a {
-            color: $lightGreen;
-        }
+        color: $lightGreen;
     }
     button {
         padding: 5px;
         margin: 0;
         border-radius: 0;
+    }
+}
+
+.favoriteBar {
+    position: relative;
+    ul{
+        a {
+            padding: 0;
+            padding-left: 10px;
+            color: $lightGreen;
+        }
+        button {
+            padding: 5px;
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+    > button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0 0 10px $blackGreen;
     }
 }
 
@@ -144,7 +181,7 @@ main {
     }
 }
 
-.main__search {
+.mainSearch {
     padding: 4px;
     padding-bottom: 100px;
     @include mobile {

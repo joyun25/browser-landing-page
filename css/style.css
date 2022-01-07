@@ -67,12 +67,16 @@ body {
 }
 
 a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
 }
 
 .w-100 {
   width: 100%;
+}
+
+.d-none {
+  display: none;
 }
 
 .d-flex {
@@ -144,14 +148,14 @@ a {
   color: #fff;
 }
 
-.header__search {
+.headerSearch {
   margin: 4px;
   border-radius: 5px;
   overflow: hidden;
   background: #35858B;
 }
 
-.header__search input {
+.headerSearch input {
   background: #35858B;
   color: #072227;
   outline: 0;
@@ -164,25 +168,65 @@ a {
   letter-spacing: 1px;
 }
 
-.header__search button {
+.headerSearch button {
   padding: 5px 8px;
   margin: 0;
   border-radius: 0;
 }
 
-.favorite ul li {
-  padding: 0;
-  padding-left: 10px;
+.favoriteMenu {
+  position: relative;
 }
 
-.favorite ul li a {
+.favoriteList {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background: #072227;
+  border-radius: 5px;
+  width: 200px;
+}
+
+@media (max-width: 500px) {
+  .favoriteList {
+    right: 0;
+  }
+}
+
+.favoriteList a {
+  padding: 0;
+  padding-left: 10px;
   color: #AEFEFF;
 }
 
-.favorite ul button {
+.favoriteList button {
   padding: 5px;
   margin: 0;
   border-radius: 0;
+}
+
+.favoriteBar {
+  position: relative;
+}
+
+.favoriteBar ul a {
+  padding: 0;
+  padding-left: 10px;
+  color: #AEFEFF;
+}
+
+.favoriteBar ul button {
+  padding: 5px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.favoriteBar > button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-box-shadow: 0 0 10px #072227;
+          box-shadow: 0 0 10px #072227;
 }
 
 main {
@@ -199,18 +243,18 @@ main {
   }
 }
 
-.main__search {
+.mainSearch {
   padding: 4px;
   padding-bottom: 100px;
 }
 
 @media (max-width: 500px) {
-  .main__search {
+  .mainSearch {
     padding-bottom: 0px;
   }
 }
 
-.main__search input {
+.mainSearch input {
   width: clamp(220px, 33%, 500px);
   background: #35858B;
   color: #072227;
@@ -225,7 +269,7 @@ main {
   border-radius: 5px;
 }
 
-.main__search button {
+.mainSearch button {
   padding: 5px 8px;
   margin: 0;
   font-size: 24px;

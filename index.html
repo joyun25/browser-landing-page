@@ -20,74 +20,59 @@
                     <li class="btn btn-darkGreen">
                         <i class="fas fa-arrow-right"></i> <!-- next page -->
                     </li>
-                    <li class="btn btn-darkGreen">
+                    <li class="reload btn btn-darkGreen">
                         <i class="fas fa-redo-alt"></i> <!-- refresh page -->
                     </li>
                 </ul>
-                <form class="header__search d-flex w-100">
+                <div class="form headerSearch d-flex w-100">
                     <input class="w-100" type="text">
-                    <button class="btn btn-transparent" type="submit">
+                    <button class="searchBtn btn btn-transparent">
                         <i class="fas fa-search"></i> <!-- search -->
                     </button>
-                </form>
-                <button class="btn btn-darkGreen">
-                    <i class="fas fa-bars"></i> <!-- menu -->
-                </button>
+                </div>
+                <div class="favoriteMenu">
+                    <button class="btn btn-darkGreen">
+                        <i class="fas fa-bars"></i> <!-- menu -->
+                    </button>
+                    <ul class="favoriteList d-none">
+                    </ul>
+                </div>
             </nav>
-            <nav class="favorite d-flex justify-between">
+            <nav class="favoriteBar">
                 <ul class="d-flex justify-start align-center">
-                    <li class="btn btn-darkGreen">
-                        <a href="https://stackoverflow.com/">Stack Overflow</a>
-                        <button class="btn btn-transparent">
-                            <i class="fas fa-times"></i> <!-- delete item -->
-                        </button>
-                    </li>
-                    <li class="btn btn-darkGreen">
-                        <a href="https://github.com/joyun25/">Github</a>
-                        <button class="btn btn-transparent">
-                            <i class="fas fa-times"></i> <!-- delete item -->
-                        </button>
-                    </li>
-                    <li class="btn btn-darkGreen">
-                        <a href="https://codepen.io/">Codepen</a>
-                        <button class="btn btn-transparent">
-                            <i class="fas fa-times"></i> <!-- delete item -->
-                        </button>
-                    </li>
-                    <li class="btn btn-darkGreen">
-                        <a href="https://developer.mozilla.org/en-US/">MDN</a>
-                        <button class="btn btn-transparent">
-                            <i class="fas fa-times"></i> <!-- delete item -->
-                        </button>
-                    </li>
                 </ul>
                 <button class="btn btn-darkGreen">
-                    <i class="fas fa-plus"></i> <!-- plus favorite -->
+                    <i class="addFavorite fas fa-plus"></i> <!-- plus favorite -->
                 </button>
             </nav>
         </header>
         <main class="d-flex flex-column justify-center align-center">
             <img class="logo" src="images/logo.svg" alt="Wind logo">
-            <form class="main__search d-flex justify-center w-100">
+            <div class="form mainSearch d-flex justify-center w-100">
                 <input type="text">
-                <button class="btn btn-transparent" type="submit">
+                <button class="searchBtn btn btn-transparent">
                     <i class="fas fa-search"></i> <!-- search -->
                 </button>
-            </form>
+            </div>
         </main>
         <nav class="nav-mb bg-blackGreen">
             <ul class="d-flex justify-between">
                 <li class="btn btn-darkGreen">
-                    <i class="fas fa-redo-alt"></i> <!-- refresh page -->
+                    <i class="reload fas fa-redo-alt"></i> <!-- refresh page -->
                 </li>
                 <li class="btn btn-darkGreen">
-                    <i class="fas fa-plus"></i> <!-- plus favorite -->
+                    <i class="addFavorite fas fa-plus"></i> <!-- plus favorite -->
                 </li>
-                <li class="btn btn-darkGreen">
-                    <i class="fas fa-bars"></i> <!-- menu -->
+                <li class="favoriteMenu">
+                    <button class="btn btn-darkGreen">
+                        <i class="fas fa-bars"></i> <!-- menu -->
+                    </button>
+                    <ul class="favoriteList d-none">
+                    </ul>
                 </li>
             </ul>
         </nav>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
