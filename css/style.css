@@ -245,7 +245,7 @@ main {
 
 @media (max-width: 500px) {
   main {
-    min-height: calc(100vh - 36px);
+    min-height: 100vh;
   }
 }
 
@@ -298,6 +298,10 @@ main {
 @media (max-width: 500px) {
   .nav-mb {
     display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

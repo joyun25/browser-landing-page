@@ -183,7 +183,7 @@ main {
     background-size: cover;
     min-height: calc(100vh - 72px);
     @include mobile {
-        min-height: calc(100vh - 36px);
+        min-height: 100vh;
     }
 }
 
@@ -227,5 +227,9 @@ main {
     display: none;
     @include mobile {
         display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
