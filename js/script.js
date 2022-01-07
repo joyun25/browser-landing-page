@@ -82,6 +82,8 @@ addFavorites.forEach(addFavorite => {
         if (favoriteLink.trim() == '') {
             alert('Please fill in a valid link.');
             return
+        }else if(!favoriteLink.includes('https://') || !favoriteLink.includes('http://')) {
+            favoriteLink = `https://${favoriteLink.trim()}`;
         }
         let favorite ={
             "favName": favoriteName.trim(), 
