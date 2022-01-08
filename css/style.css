@@ -161,14 +161,13 @@ a {
 
 .headerSearch input {
   background: #35858B;
-  color: #072227;
+  color: #fff;
   outline: 0;
   border: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-  padding-left: 5px;
+  padding-left: 10px;
   font-size: 16px;
-  font-weight: bold;
   letter-spacing: 1px;
 }
 
@@ -189,7 +188,7 @@ a {
   background: #072227;
   border-radius: 5px;
   width: 200px;
-  z-index: 3;
+  z-index: 4;
 }
 
 @media (max-width: 500px) {
@@ -218,6 +217,7 @@ a {
   padding: 0;
   padding-left: 10px;
   color: #AEFEFF;
+  white-space: nowrap;
 }
 
 .favoriteBar ul button {
@@ -230,9 +230,21 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 2;
+  z-index: 3;
   -webkit-box-shadow: 0 0 10px #072227;
           box-shadow: 0 0 10px #072227;
+}
+
+.btnBg {
+  background: -webkit-gradient(linear, right top, left top, from(#072227), color-stop(60%, #072227), to(transparent));
+  background: linear-gradient(to left, #072227, #072227 60%, transparent);
+  width: 60px;
+  height: 36px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
 }
 
 main {
@@ -263,14 +275,13 @@ main {
 .mainSearch input {
   width: clamp(220px, 33%, 500px);
   background: #35858B;
-  color: #072227;
+  color: #fff;
   outline: 0;
   border: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
   padding: 5px 0 5px 10px;
   font-size: 24px;
-  font-weight: bold;
   letter-spacing: 1px;
   border-radius: 5px;
 }

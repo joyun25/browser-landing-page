@@ -110,13 +110,12 @@ a {
     background: $blueGreen;
     input {
         background: $blueGreen;
-        color: $blackGreen;
+        color: #fff;
         outline: 0;
         border: 0;
         box-shadow: none;
-        padding-left: 5px;
+        padding-left: 10px;
         font-size: 16px;
-        font-weight: bold;
         letter-spacing: 1px;
     }
     button {
@@ -137,7 +136,7 @@ a {
     background: $blackGreen;
     border-radius: 5px;
     width: 200px;
-    z-index: 3;
+    z-index: 4;
     @include mobile {
         right: 0;
     }
@@ -160,6 +159,7 @@ a {
             padding: 0;
             padding-left: 10px;
             color: $lightGreen;
+            white-space: nowrap;
         }
         button {
             padding: 5px;
@@ -171,9 +171,20 @@ a {
         position: absolute;
         right: 0;
         bottom: 0;
-        z-index: 2;
+        z-index: 3;
         box-shadow: 0 0 10px $blackGreen;
     }
+}
+
+.btnBg {
+    background: linear-gradient(to left, $blackGreen, $blackGreen 60%, transparent);
+    width: 60px;
+    height: 36px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
 }
 
 main {
@@ -196,13 +207,12 @@ main {
     input {
         width: clamp(220px, 33%, 500px);
         background: $blueGreen;
-        color: $blackGreen;
+        color: #fff;
         outline: 0;
         border: 0;
         box-shadow: none;
         padding: 5px 0 5px 10px;
         font-size: 24px;
-        font-weight: bold;
         letter-spacing: 1px;
         border-radius: 5px;
     }
