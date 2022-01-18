@@ -2,7 +2,7 @@
 
 ###### This project was done as a part of the WebDev challenges Discord https://discord.gg/eayukvGydW
 
-### [Github Pages](https://joyun25.github.io/wind-browser/)
+### [Github Pages](https://joyun25.github.io/browser-landing-page/)
 ![](https://i.imgur.com/uQjll1L.jpg)
 ![](https://i.imgur.com/ywALM0M.png)
 
